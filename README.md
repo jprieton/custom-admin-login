@@ -1,4 +1,4 @@
-Admin Login Customizer
+Custom Admin Login
 ===========
 Allows you to customize the background, logo, font color, url and caption on the WordPress login page.
 

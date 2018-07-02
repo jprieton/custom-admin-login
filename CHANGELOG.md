@@ -1,6 +1,6 @@
 # CHANGELOG
 
-Admin Login Customizer follows [SemVer](http://semver.org/).
+Custom Admin Login follows [SemVer](http://semver.org/).
 
 ## 1.x
 
