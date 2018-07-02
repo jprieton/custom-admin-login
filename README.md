@@ -12,4 +12,4 @@ You can:
 
 Bug tracker
 -----------
-Have a bug? Please create an issue on GitHub at https://github.com/jprieton/source-framework/issues
+Have a bug? Please create an issue on GitHub at https://github.com/jprieton/custom-admin-login/issues

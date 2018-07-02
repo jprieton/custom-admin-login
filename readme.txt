@@ -26,7 +26,7 @@ You can:
 2. Theme Customization login page options.
 
 == Contribute ==
-Have a bug? Please create an issue on GitHub at https://github.com/jprieton/admin-login-customizer/issues
+Have a bug? Please create an issue on GitHub at https://github.com/jprieton/custom-admin-login/issues
 
 == Changelog ==
 
