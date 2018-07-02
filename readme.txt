@@ -1,0 +1,34 @@
+=== Admin Login Customizer ===
+Contributors: jprieton
+Tags: admin, login, custom
+Stable tag: 1.0.0
+Requires at least: 4.9
+Tested up to: 4.9.6
+Requires PHP: 5.3.0
+License: GPLv3
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+
+Allows you to customize the background, logo, font color, url and caption on the WordPress login page.
+
+== Description ==
+Admin Login Customizer is a free plugin that allows you to customize the WordPress login page.
+
+= Features =
+You can:
+* Set the color and/or image background.
+* Set the logo image contained in a area 320 x 84 pixels (if it's bigger, it's scaled to fit).
+* Set URL and caption of the logo image.
+* Set font color outside of login form.
+
+== Screenshots ==
+
+1. Theme Customization main panel.
+2. Theme Customization login page options.
+
+== Contribute ==
+Have a bug? Please create an issue on GitHub at https://github.com/jprieton/admin-login-customizer/issues
+
+== Changelog ==
+
+= 1.0.0 =
+* Initial release

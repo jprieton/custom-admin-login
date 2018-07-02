@@ -1,0 +1,65 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Admin Login Customizer\n"
+"POT-Creation-Date: 2018-07-02 11:25-0400\n"
+"PO-Revision-Date: 2018-07-02 13:26-0400\n"
+"Last-Translator: Javier Prieto <jprieton@gmail.com>\n"
+"Language-Team: \n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;"
+"_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;_ex:1,2c;"
+"esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../includes/class-textdomain.php:76
+msgid ""
+"Allows you to customize the background, logo, url and caption on the "
+"WordPress login page."
+msgstr ""
+"Permite personalizar el fondo, logo, url y título en la página de inicio de "
+"sesión de WordPress."
+
+#: ../includes/class-theme-customizer.php:78
+msgid "Login Page"
+msgstr "Página de inicio de sesión"
+
+#: ../includes/class-theme-customizer.php:85
+msgid "Background color"
+msgstr "Color de fondo"
+
+#: ../includes/class-theme-customizer.php:94
+msgid "Background image"
+msgstr "Imagen de fondo"
+
+#: ../includes/class-theme-customizer.php:102
+msgid "Background position"
+msgstr "Posición del fondo"
+
+#: ../includes/class-theme-customizer.php:117
+msgid "Font color"
+msgstr "Color de la fuente"
+
+#: ../includes/class-theme-customizer.php:126
+msgid "Header image"
+msgstr "Imagen de cabecera"
+
+#: ../includes/class-theme-customizer.php:129
+msgid "The custom header is centered and contained in a 320 x 84 pixels block"
+msgstr ""
+"El encabezado personalizado está centrado y contenido en un bloque de 320 x "
+"60 píxeles"
+
+#: ../includes/class-theme-customizer.php:135
+msgid "Header URL"
+msgstr "URL del encabezado"
+
+#: ../includes/class-theme-customizer.php:143
+msgid "Header Title"
+msgstr "Título del encabezado"
