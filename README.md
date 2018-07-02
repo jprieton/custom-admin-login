@@ -1,12 +1,15 @@
-=== Admin Login Customizer ===
+Admin Login Customizer
+===========
 Allows you to customize the background, logo, font color, url and caption on the WordPress login page.
 
-= Features =
+Features
+-----------
 You can:
 * Set the color and/or image background.
 * Set the logo image contained in a area 320 x 84 pixels (if it's bigger, it's scaled to fit).
 * Set URL and caption of the logo image.
 * Set font color outside of login form.
 
-== Bug tracker ==
-Have a bug? Please create an issue on GitHub at https://github.com/jprieton/admin-login-customizer/issues
+Bug tracker
+-----------
+Have a bug? Please create an issue on GitHub at https://github.com/jprieton/source-framework/issues
