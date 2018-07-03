@@ -1,6 +1,6 @@
 <?php
 
-namespace ALC;
+namespace CustomAdminLogin;
 
 // If this file is called directly, abort.
 if ( !defined( 'ABSPATH' ) ) {
@@ -61,7 +61,7 @@ class Textdomain {
    * @since     1.1.0
    */
   public static function load_plugin_textdomain() {
-    load_plugin_textdomain( ALC_TEXTDOMAIN, FALSE, basename( dirname( ALC_BASENAME ) ) . '/languages/' );
+    load_plugin_textdomain( TEXTDOMAIN, FALSE, basename( dirname( BASENAME ) ) . '/languages/' );
   }
 
   /**
@@ -72,8 +72,8 @@ class Textdomain {
    * @return    array
    */
   public static function modify_plugin_description( $all_plugins = [] ) {
-    if ( key_exists( ALC_BASENAME, $all_plugins ) ) {
-      $all_plugins[ALC_BASENAME]['Description'] = __( 'Allows you to customize the background, logo, url and caption on the WordPress login page.', ALC_TEXTDOMAIN );
+    if ( key_exists( BASENAME, $all_plugins ) ) {
+      $all_plugins[BASENAME]['Description'] = __( 'Allows you to customize the background, logo, url and caption on the WordPress login page.', TEXTDOMAIN );
     }
     return $all_plugins;
   }

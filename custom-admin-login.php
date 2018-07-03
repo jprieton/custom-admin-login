@@ -10,7 +10,7 @@
  * Tested up to:        4.9.6
  * Author:              Javier Prieto
  * Author URI:          https://github.com/jprieton
- * Text Domain:         admin-login-customizer
+ * Text Domain:         custom-admin-login
  * Domain Path:         /languages/
  *
  * Custom Admin Login is free software: you can redistribute it and/or modify
@@ -26,8 +26,9 @@
  * You should have received a copy of the GNU General Public License
  * along with Custom Admin Login. If not, see http://www.gnu.org/licenses/gpl-3.0.txt.
  *
- * @package AdminLoginCustomizer
+ * @package CustomAdminLogin
  */
+
 // If this file is called directly, abort.
 if ( !defined( 'ABSPATH' ) ) {
   die( 'Direct access is forbidden.' );
@@ -37,19 +38,17 @@ if ( !defined( 'ABSPATH' ) ) {
  * Define plugin constants
  * @since 1.0.0
  */
-define( 'ALC_VERSION', '1.0.0' );
-define( 'ALC_FILENAME', __FILE__ );
-define( 'ALC_BASENAME', plugin_basename( __FILE__ ) );
-define( 'ALC_BASEDIR', __DIR__ );
-define( 'ALC_BASEURL', plugin_dir_url( __FILE__ ) );
-define( 'ALC_TEXTDOMAIN', 'admin-login-customizer' );
-define( 'ALC_ABSPATH', plugin_dir_path( ALC_FILENAME ) . 'includes' );
+define( 'CustomAdminLogin\VERSION', '1.0.0' );
+define( 'CustomAdminLogin\FILENAME', __FILE__ );
+define( 'CustomAdminLogin\BASENAME', plugin_basename( __FILE__ ) );
+define( 'CustomAdminLogin\TEXTDOMAIN', 'custom-admin-login' );
+define( 'CustomAdminLogin\ABSPATH', plugin_dir_path( CustomAdminLogin\FILENAME ) . 'includes' );
 
 // Load texdomain
-require_once ALC_ABSPATH . '/class-textdomain.php';
-ALC\Textdomain::init();
+require_once CustomAdminLogin\ABSPATH . '/class-textdomain.php';
+CustomAdminLogin\Textdomain::init();
 
 // Initialize customizer
-require_once ALC_ABSPATH . '/class-theme-customizer.php';
-ALC\Theme_Customizer::init();
+require_once CustomAdminLogin\ABSPATH . '/class-theme-customizer.php';
+CustomAdminLogin\Theme_Customizer::init();
 
