@@ -1,4 +1,4 @@
-=== Admin Login Customizer ===
+=== Custom Admin Login ===
 Contributors: jprieton
 Tags: admin, login, custom
 Stable tag: 1.0.0
@@ -11,7 +11,7 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Allows you to customize the background, logo, font color, url and caption on the WordPress login page.
 
 == Description ==
-Admin Login Customizer is a free plugin that allows you to customize the WordPress login page.
+Custom Admin Login is a free plugin that allows you to customize the WordPress login page.
 
 = Features =
 You can:
