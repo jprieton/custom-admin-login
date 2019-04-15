@@ -6,7 +6,7 @@ Features
 -----------
 You can:
 * Set the color and/or image background.
-* Set the logo image contained in a area 320 x 84 pixels (if it's bigger, it's scaled to fit).
+* Replaces the WordPress logo for a custon image contained in a area 320 x 84 pixels (if it's bigger, it's scaled to fit).
 * Set URL and caption of the logo image.
 * Set font color outside of login form.
 

@@ -4,10 +4,10 @@
  * Plugin Name:         Custom Admin Login
  * Plugin URI:          https://github.com/jprieton/custom-admin-login
  * Description:         Allows you to customize the background, logo, url and caption on the WordPress login page.
- * Tags:                admin, login, custom
- * Version:             1.0.0
+ * Tags:                admin, login, custom, background, logo
+ * Version:             1.0.1
  * Requires at least:   4.9
- * Tested up to:        4.9.6
+ * Tested up to:        5.1.1
  * Author:              Javier Prieto
  * Author URI:          https://github.com/jprieton
  * Text Domain:         custom-admin-login
@@ -30,25 +30,22 @@
  */
 
 // If this file is called directly, abort.
-if ( !defined( 'ABSPATH' ) ) {
-  die( 'Direct access is forbidden.' );
-}
+defined( 'ABSPATH' ) || exit;
 
 /**
  * Define plugin constants
  * @since 1.0.0
  */
-define( 'CustomAdminLogin\VERSION', '1.0.0' );
+define( 'CustomAdminLogin\VERSION', '1.0.1' );
 define( 'CustomAdminLogin\FILENAME', __FILE__ );
 define( 'CustomAdminLogin\BASENAME', plugin_basename( __FILE__ ) );
-define( 'CustomAdminLogin\TEXTDOMAIN', 'custom-admin-login' );
-define( 'CustomAdminLogin\ABSPATH', plugin_dir_path( CustomAdminLogin\FILENAME ) . 'includes' );
+define( 'CustomAdminLogin\INCLUDES', plugin_dir_path( CustomAdminLogin\FILENAME ) . 'includes' );
 
 // Load texdomain
-require_once CustomAdminLogin\ABSPATH . '/class-textdomain.php';
+require_once CustomAdminLogin\INCLUDES . '/class-textdomain.php';
 CustomAdminLogin\Textdomain::init();
 
 // Initialize customizer
-require_once CustomAdminLogin\ABSPATH . '/class-theme-customizer.php';
+require_once CustomAdminLogin\INCLUDES . '/class-theme-customizer.php';
 CustomAdminLogin\Theme_Customizer::init();
 

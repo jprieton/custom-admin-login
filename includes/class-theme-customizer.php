@@ -3,9 +3,7 @@
 namespace CustomAdminLogin;
 
 // If this file is called directly, abort.
-if ( !defined( 'ABSPATH' ) ) {
-  die( 'Direct access is forbidden.' );
-}
+defined( 'ABSPATH' ) || exit;
 
 use WP_Customize_Manager;
 use WP_Customize_Color_Control;
@@ -75,14 +73,14 @@ class Theme_Customizer {
     $section_id = 'login_customizer_section';
 
     $wp_customize->add_section( $section_id, [
-        'title'    => __( 'Login Page', TEXTDOMAIN ),
+        'title'    => __( 'Login Page', 'custom-admin-login' ),
         'priority' => 1000,
     ] );
 
     $wp_customize->add_setting( 'login_background_color', [ 'default' => '#f1f1f1', ] );
     $wp_customize->add_control(
             new WP_Customize_Color_Control( $wp_customize, 'login_background_color', [
-        'label'    => __( 'Background color', TEXTDOMAIN ),
+        'label'    => __( 'Background color', 'custom-admin-login' ),
         'section'  => $section_id,
         'settings' => 'login_background_color',
             ] )
@@ -91,7 +89,7 @@ class Theme_Customizer {
     $wp_customize->add_setting( 'login_background_image' );
     $wp_customize->add_control(
             new WP_Customize_Image_Control( $wp_customize, 'login_background_image', [
-        'label'    => __( 'Background image', TEXTDOMAIN ),
+        'label'    => __( 'Background image', 'custom-admin-login' ),
         'section'  => $section_id,
         'settings' => 'login_background_image',
             ] )
@@ -99,7 +97,7 @@ class Theme_Customizer {
 
     $wp_customize->add_setting( 'login_background_position' );
     $wp_customize->add_control( 'login_background_position', [
-        'label'    => __( 'Background position', TEXTDOMAIN ),
+        'label'    => __( 'Background position', 'custom-admin-login' ),
         'section'  => $section_id,
         'settings' => 'login_background_position',
         'type'     => 'select',
@@ -114,7 +112,7 @@ class Theme_Customizer {
     $wp_customize->add_setting( 'login_font_color', [ 'default' => '#555d66', ] );
     $wp_customize->add_control(
             new WP_Customize_Color_Control( $wp_customize, 'login_font_color', [
-        'label'    => __( 'Font color', TEXTDOMAIN ),
+        'label'    => __( 'Font color', 'custom-admin-login' ),
         'section'  => $section_id,
         'settings' => 'login_font_color',
             ] )
@@ -123,16 +121,16 @@ class Theme_Customizer {
     $wp_customize->add_setting( 'login_header_image' );
     $wp_customize->add_control(
             new WP_Customize_Image_Control( $wp_customize, 'login_header_image', [
-        'label'       => __( 'Header image', TEXTDOMAIN ),
+        'label'       => __( 'Header image', 'custom-admin-login' ),
         'section'     => $section_id,
         'settings'    => 'login_header_image',
-        'description' => __( 'The custom header is centered and contained in a 320 x 84 pixels block', TEXTDOMAIN ),
+        'description' => __( 'The custom header is centered and contained in a 320 x 84 pixels block', 'custom-admin-login' ),
             ] )
     );
 
     $wp_customize->add_setting( 'login_header_url' );
     $wp_customize->add_control( 'login_header_url', [
-        'label'    => __( 'Header URL', TEXTDOMAIN ),
+        'label'    => __( 'Header URL', 'custom-admin-login' ),
         'section'  => $section_id,
         'settings' => 'login_header_url',
         'type'     => 'text',
@@ -140,7 +138,7 @@ class Theme_Customizer {
 
     $wp_customize->add_setting( 'login_header_title' );
     $wp_customize->add_control( 'login_header_title', [
-        'label'    => __( 'Header Title', TEXTDOMAIN ),
+        'label'    => __( 'Header Title', 'custom-admin-login' ),
         'section'  => $section_id,
         'settings' => 'login_header_title',
         'type'     => 'text',

@@ -3,9 +3,7 @@
 namespace CustomAdminLogin;
 
 // If this file is called directly, abort.
-if ( !defined( 'ABSPATH' ) ) {
-  die( 'Direct access is forbidden.' );
-}
+defined( 'ABSPATH' ) || exit;
 
 /**
  * Textdomain class
@@ -61,7 +59,7 @@ class Textdomain {
    * @since     1.1.0
    */
   public static function load_plugin_textdomain() {
-    load_plugin_textdomain( TEXTDOMAIN, FALSE, basename( dirname( BASENAME ) ) . '/languages/' );
+    load_plugin_textdomain( 'custom-admin-login', FALSE, basename( dirname( BASENAME ) ) . '/languages/' );
   }
 
   /**
@@ -73,7 +71,7 @@ class Textdomain {
    */
   public static function modify_plugin_description( $all_plugins = [] ) {
     if ( key_exists( BASENAME, $all_plugins ) ) {
-      $all_plugins[BASENAME]['Description'] = __( 'Allows you to customize the background, logo, url and caption on the WordPress login page.', TEXTDOMAIN );
+      $all_plugins[BASENAME]['Description'] = __( 'Allows you to customize the background, logo, url and caption on the WordPress login page.', 'custom-admin-login' );
     }
     return $all_plugins;
   }
