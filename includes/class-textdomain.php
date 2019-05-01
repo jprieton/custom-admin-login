@@ -32,11 +32,11 @@ class Textdomain {
    * @return  static
    */
   public static function &init() {
-    if ( empty( static::$instance ) ) {
-      static::$instance = new static();
+    if ( empty( self::$instance ) ) {
+      self::$instance = new static();
     }
 
-    return static::$instance;
+    return self::$instance;
   }
 
   /**
@@ -74,6 +74,33 @@ class Textdomain {
       $all_plugins[BASENAME]['Description'] = __( 'Allows you to customize the background, logo, url and caption on the WordPress login page.', 'custom-admin-login' );
     }
     return $all_plugins;
+  }
+
+  /**
+   * Declared as private to prevent cloning of an instance of the class via the clone operator.
+   *
+   * @since   1.0.0
+   */
+  private function __clone() {
+    
+  }
+
+  /**
+   * Declared as private to prevent unserializing of an instance of the class via the global function unserialize().
+   *
+   * @since   1.0.0
+   */
+  private function __wakeup() {
+    
+  }
+
+  /**
+   * Declared as protected to prevent serializg of an instance of the class via the global function serialize().
+   *
+   * @since   1.0.0
+   */
+  protected function __sleep() {
+    
   }
 
 }

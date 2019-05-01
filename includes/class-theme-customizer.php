@@ -36,11 +36,11 @@ class Theme_Customizer {
    * @return  static
    */
   public static function &init() {
-    if ( empty( static::$instance ) ) {
-      static::$instance = new static();
+    if ( empty( self::$instance ) ) {
+      self::$instance = new static();
     }
 
-    return static::$instance;
+    return self::$instance;
   }
 
   /**
@@ -80,19 +80,19 @@ class Theme_Customizer {
     $wp_customize->add_setting( 'login_background_color', [ 'default' => '#f1f1f1', ] );
     $wp_customize->add_control(
             new WP_Customize_Color_Control( $wp_customize, 'login_background_color', [
-        'label'    => __( 'Background color', 'custom-admin-login' ),
-        'section'  => $section_id,
-        'settings' => 'login_background_color',
-            ] )
+                'label'    => __( 'Background color', 'custom-admin-login' ),
+                'section'  => $section_id,
+                'settings' => 'login_background_color',
+                    ] )
     );
 
     $wp_customize->add_setting( 'login_background_image' );
     $wp_customize->add_control(
             new WP_Customize_Image_Control( $wp_customize, 'login_background_image', [
-        'label'    => __( 'Background image', 'custom-admin-login' ),
-        'section'  => $section_id,
-        'settings' => 'login_background_image',
-            ] )
+                'label'    => __( 'Background image', 'custom-admin-login' ),
+                'section'  => $section_id,
+                'settings' => 'login_background_image',
+                    ] )
     );
 
     $wp_customize->add_setting( 'login_background_position' );
@@ -112,20 +112,20 @@ class Theme_Customizer {
     $wp_customize->add_setting( 'login_font_color', [ 'default' => '#555d66', ] );
     $wp_customize->add_control(
             new WP_Customize_Color_Control( $wp_customize, 'login_font_color', [
-        'label'    => __( 'Font color', 'custom-admin-login' ),
-        'section'  => $section_id,
-        'settings' => 'login_font_color',
-            ] )
+                'label'    => __( 'Font color', 'custom-admin-login' ),
+                'section'  => $section_id,
+                'settings' => 'login_font_color',
+                    ] )
     );
 
     $wp_customize->add_setting( 'login_header_image' );
     $wp_customize->add_control(
             new WP_Customize_Image_Control( $wp_customize, 'login_header_image', [
-        'label'       => __( 'Header image', 'custom-admin-login' ),
-        'section'     => $section_id,
-        'settings'    => 'login_header_image',
-        'description' => __( 'The custom header is centered and contained in a 320 x 84 pixels block', 'custom-admin-login' ),
-            ] )
+                'label'       => __( 'Header image', 'custom-admin-login' ),
+                'section'     => $section_id,
+                'settings'    => 'login_header_image',
+                'description' => __( 'The custom header is centered and contained in a 320 x 84 pixels block', 'custom-admin-login' ),
+                    ] )
     );
 
     $wp_customize->add_setting( 'login_header_url' );
@@ -279,6 +279,33 @@ class Theme_Customizer {
       </style>
       <?php
     }
+  }
+
+  /**
+   * Declared as private to prevent cloning of an instance of the class via the clone operator.
+   *
+   * @since   1.0.0
+   */
+  private function __clone() {
+    
+  }
+
+  /**
+   * Declared as private to prevent unserializing of an instance of the class via the global function unserialize().
+   *
+   * @since   1.0.0
+   */
+  private function __wakeup() {
+    
+  }
+
+  /**
+   * Declared as protected to prevent serializg of an instance of the class via the global function serialize().
+   *
+   * @since   1.0.0
+   */
+  protected function __sleep() {
+    
   }
 
 }
