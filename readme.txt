@@ -4,7 +4,7 @@ Tags: admin, login, custom, background, logo
 Stable tag: 1.0.1
 Requires at least: 4.9
 Tested up to: 5.1.1
-Requires PHP: 7.3
+Requires PHP: 5.4
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
