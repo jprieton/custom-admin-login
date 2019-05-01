@@ -4,7 +4,7 @@
  * Plugin Name:         Custom Admin Login
  * Plugin URI:          https://github.com/jprieton/custom-admin-login
  * Description:         Allows you to customize the background, logo, url and caption on the WordPress login page.
- * Tags:                admin, login, custom, background, logo, custon admin login, login page
+ * Tags:                admin, login, custom, background, logo, custom admin login, login page
  * Version:             1.0.1
  * Requires at least:   4.9
  * Tested up to:        5.1.1
