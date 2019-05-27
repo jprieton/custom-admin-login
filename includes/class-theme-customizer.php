@@ -55,7 +55,7 @@ class Theme_Customizer {
 
     // login page
     add_filter( 'login_headerurl', [ $this, 'login_header_url' ], 99 );
-    add_filter( 'login_headertitle', [ $this, 'login_header_title' ], 99 );
+    add_filter( 'login_headertext', [ $this, 'login_header_title' ], 99 );
     add_action( 'login_enqueue_scripts', [ $this, 'login_header_image' ], 99 );
     add_action( 'login_enqueue_scripts', [ $this, 'login_font_color' ], 99 );
     add_action( 'login_enqueue_scripts', [ $this, 'login_background_color' ], 99 );
@@ -65,7 +65,7 @@ class Theme_Customizer {
   /**
    * Adds the login page menu to theme customizer
    *
-   * @since     1.0.0
+   * @since   1.0.0
    *
    * @param WP_Customize_Manager $wp_customize
    */
