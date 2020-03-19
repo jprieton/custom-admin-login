@@ -1,6 +1,6 @@
 {
   "name": "custom-admin-login",
-  "version": "1.0.1",
+  "version": "1.0.6",
   "description": "Allows you to customize the background, logo, font color, url and caption on the WordPress login page.",
   "scripts": {
     "development": "cross-env NODE_ENV=development --mode=development",
@@ -17,8 +17,8 @@
   },
   "homepage": "https://github.com/jprieton/custom-admin-login#readme",
   "devDependencies": {
-    "cross-env": "^5.2.0",
-    "grunt": "^1.0.4",
-    "grunt-contrib-copy": "^1.0.0"
+    "cross-env": "7.0.2",
+    "grunt": "1.1.0",
+    "grunt-contrib-copy": "1.0.0"
   }
 }
