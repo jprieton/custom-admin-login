@@ -1,9 +1,9 @@
 === Custom Admin Login ===
 Contributors: jprieton
 Tags: admin, login, custom, background, logo, custom admin login, login page, admin login
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 Requires at least: 5.2
-Tested up to: 5.4
+Tested up to: 5.7
 Requires PHP: 5.6
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
