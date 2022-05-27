@@ -1,10 +1,10 @@
 === Custom Admin Login ===
 Contributors: jprieton
 Tags: admin, login, custom, background, logo, custom admin login, login page, admin login
-Stable tag: 1.0.7
+Stable tag: 1.0.8
 Requires at least: 5.2
 Tested up to: 5.7
-Requires PHP: 5.6
+Requires PHP: 6.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -30,7 +30,9 @@ Have a bug? Please create an issue on GitHub [here](https://github.com/jprieton/
 
 == Changelog ==
 
-= 1.0.0 =
-* Initial release
+= 1.0.8 =
+* FIX: In some section the font color is not changed 
 = 1.0.4 =
 * Update deprecated filters
+= 1.0.0 =
+* Initial release

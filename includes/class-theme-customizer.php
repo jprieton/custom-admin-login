@@ -212,6 +212,10 @@ class Theme_Customizer {
         body.login #backtoblog a, body.login #nav a {
           color: <?php echo $custom_font_color ?>;
         }
+
+        body #language-switcher .dashicons.dashicons-translation {
+          color: <?php echo $custom_font_color ?>;
+        }
       </style>
       <?php
     }
